@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.button{
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.div{
+    @apply grid w-[900px] h-[900px] my-10 mx-30 gap-10 bg-blue-500 rounded-xl shadow-md  items-center space-x-4;
+}
+
+.header{
+    @apply text-4xl font-bold text-center mb-5 bg-blue-500 hover:bg-blue-700 text-white p-4 rounded-lg ;
+}
+
+.container{
+    @apply grid  bg-red-500 w-full h-auto justify-between;
+}
+
+.box1{
+    @apply bg-white w-50 h-30 ml-5;
+}
+
+.box2{
+    @apply bg-white w-50 h-50 ml-5;
+}
+
+.box3{
+    @apply bg-white w-50 h-50 ml-5;
+}
+
+.box4{
+    @apply bg-white w-50 h-50 ml-5;
+}
