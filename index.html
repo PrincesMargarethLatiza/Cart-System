@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/output.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candy System</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <link
+    rel="icon"
+    href="https://th.bing.com/th/id/OIP.FIi3qVsCdrdGoXw_Ua3lcQHaHa?w=177&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+    type="image/x-icon"
+  />
 </head>
-<body>
-    <header class="header">
-        <h1 class="">
-            Simple Cart System
-        </h1>
-    </header>
-    <main>
-        <sectoion>
-            <article>
-                <div class="container">
 
-        <div class="div ">
-            <div class="box1 bg-red-500">h</div>
-            <div class="box2 bg-green-500">h</div>
-            <div class="box3 bg-blue-500">h</div>
-            <div class="box4 bg-yellow-500">h</div>
-        </div>
+<body class="bg-gradient-to-b from-pink-200 to-purple-300 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-pink-500 text-white text-center py-3 font-bold text-lg">
+    CANDY SHOP
+  </header>
 
-        <div class="div">
+  <!-- Main Section -->
+  <main id="main" class="grid lg:grid-cols-2 gap-6 flex-grow p-6 w-full max-w-[1600px] mx-auto">
+    
+    <!-- LEFT: Candy Items-->
+    <section class=" bg-purple-200 rounded-2xl p-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center overflow-y-auto">
+    
+            <!-- Candy Card Template -->
+            <div id="div.product-card" class="box bg-gradient-to-br from-yellow-300 to-pink-400 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-lollipop.jpg" alt="Lollipop" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Lollipop</p>
+              <p class="text-sm text-gray-800">5 pesos</p>
+            </div>
 
-        </div>
-                </div>
-            </article>
-        </sectoion>
-    </main>
-    <script src="java.js"></script>
+            <div  class="box bg-gradient-to-br from-pink-300 to-purple-400 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-gum.avif" alt="Bubble gum" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Bubble Gum</p>
+              <p class="text-sm text-gray-800">5 pesos</p>
+            </div>
+
+            <div  class="box bg-gradient-to-br from-yellow-200 to-teal-400 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-gummys.webp" alt="Gummy Bear" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Gummy Bear</p>
+              <p class="text-sm text-gray-800">5 pesos</p>
+            </div>
+
+            <div  class="box bg-gradient-to-br from-yellow-300 to-brown-400 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-chocolates.webp" alt="Chocolates" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Chocolates</p>
+              <p class="text-sm text-gray-800">20 pesos</p>
+            </div>
+
+            <div  class="box bg-gradient-to-br from-pink-200 to-red-400 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-mintcandy.jpg" alt="Mint Candy" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Mint Candy</p>
+              <p class="text-sm text-gray-800">15 pesos</p>
+            </div>
+
+            <div  class="box bg-gradient-to-br from-gray-200 to-brown-300 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-stickO.webp" alt="Stick O" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Stick O</p>
+              <p class="text-sm text-gray-800">5 pesos</p>
+            </div>
+
+            <div  class="box bg-gradient-to-br from-yellow-300 to-cyan-400 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-sourbelts.webp" alt="Sour Belts" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Sour Belts</p>
+              <p class="text-sm text-gray-800">5 pesos</p>
+            </div>
+
+            <div  class="box bg-gradient-to-br from-pink-300 to-red-400 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-heartgummies.webp" alt="Heart Gummy" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Heart Gummy</p>
+              <p class="text-sm text-gray-800">5 pesos</p>
+            </div>
+
+            <div  class="box bg-gradient-to-br from-yellow-300 to-purple-400 rounded-xl p-3 shadow-md text-center w-48 h-50">
+              <img src="images/candy-jellybeans.webp" alt="Jelly Beans" class="rounded-md object-cover h-32 w-full mb-2" />
+              <p class="font-semibold">Jelly Beans</p>
+              <p class="text-sm text-gray-800">10 pesos</p>
+            </div>
+    </section>
+
+    <!-- RIGHT: Cart -->
+    <section
+      class="bg-purple-300 rounded-2xl  flex flex-col justify-between min-h-[80vh] grid sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center overflow-y-auto" >
+
+             <div class="">
+              <h2 class="bg-pink-500 text-white text-center font-bold py-2 rounded-md mb-4">Candy Shop</h2>
+              <!--<div class="bg-pink-400 text-white p-2 rounded-md mb-4">-->
+                <p id="demo"></p>
+              </div>
+            </div>
+            
+            <!-- <h1 class="bg-pink-500 text-white font-bold text-lg px-3 py-2 rounded-md">
+              Total:
+            </h1> -->
+           
+    </section>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>

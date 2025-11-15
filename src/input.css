@@ -1,33 +1,100 @@
 @import "tailwindcss";
-
-.button{
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+:root {
+  --gummy-red: #E63946;
+  --gummy-yellow: #FFD60A;
+  --gummy-green: #9EF01A;
+  --gummy-orange: #FF8500;
+  --gummy-blue: #00B4D8;
+  --gummy-purple: #8338EC;
 }
 
+:root {
+  --dark-choco: #3E2723;
+  --milk-choco: #6F4E37;
+  --mocha: #795548;
+  --caramel: #C68E17;
+  --cream: #F5DEB3;
+  --cocoa: #4E342E;
+}
+
+body {
+  background: linear-gradient(135deg, var(--cotton-candy), var(--sky-blue));
+  font-family: 'Poppins', sans-serif;
+}
+
+.button{
+    @apply bg-[#FF6F91] hover:bg-[#FF6F91] text-white font-bold py-2 px-4 rounded;
+}
+
+
 .div{
-    @apply grid w-[900px] h-[900px] my-10 mx-30 gap-10 bg-blue-500 rounded-xl shadow-md  items-center space-x-4;
+    @apply grid grid-cols-3  py-5 px-5 w-300 h-360 my-10 mx-30  gap-5 bg-[#CBA0FF] rounded-xl shadow-md  ;
+}
+
+.div2{
+    @apply  py-5 px-5 w-300 h-360 my-10 mx-30  gap-5 bg-[#CBA0FF] rounded-xl shadow-md  ;
 }
 
 .header{
-    @apply text-4xl font-bold text-center mb-5 bg-blue-500 hover:bg-blue-700 text-white p-4 rounded-lg ;
+    @apply text-4xl h-20 font-bold text-center mb-5 bg-[#FF6F91] hover:bg-[#FF6F91] text-white p-4 rounded-lg ;
 }
 
-.container{
-    @apply grid  bg-red-500 w-full h-auto justify-between;
+.price{
+    @apply text-2xl text-center;
 }
 
+.total{
+    @apply absolute w-150 bottom-0 mb-27 text-4xl h-20 font-bold bg-[#FF6F91] hover:bg-[#FF6F91] text-white p-4 rounded-lg;
+}
+
+
+.box{
+    @apply  hover:border-3 hover:border-b-black hover:scale-105;
+}
 .box1{
-    @apply bg-white w-50 h-30 ml-5;
+   background: linear-gradient(135deg, var(--gummy-yellow), var(--gummy-red), var(--gummy-blue)); 
+    color: var(--cream);
 }
-
 .box2{
-    @apply bg-white w-50 h-50 ml-5;
+    @apply bg-[#FF8CC6] ;
+     color: var(--cocoa);
 }
 
 .box3{
-    @apply bg-white w-50 h-50 ml-5;
+    background: linear-gradient(135deg, var(--gummy-yellow), var(--gummy-red), var(--gummy-blue)); 
+    color: var(--cream);
 }
 
 .box4{
-    @apply bg-white w-50 h-50 ml-5;
+     background: linear-gradient(135deg, var(--dark-choco), var(--milk-choco)) ;
+      color: var(--cream);
+}
+
+.box5{
+    background: linear-gradient(135deg, var(--color-red-500), var(--color-red-50),var(--color-red-500));
+    color: var(--cocoa);
+}
+
+.box6{
+    background: linear-gradient(135deg, var(--cream), var(--cocoa)); 
+    color: var(--cream);
+}
+
+.box7{
+    background: linear-gradient(135deg, var(--gummy-yellow), var(--gummy-red), var(--gummy-blue));
+    color: var(--cream);
+}
+
+.box8{
+    @apply bg-red-300  ;
+    color: var(--cocoa);
+}
+
+.box9{
+    background: linear-gradient(135deg, var(--gummy-yellow), var(--gummy-red), var(--gummy-blue)); 
+    color: var(--cream);
+}
+
+.div3{
+    @apply w-290 h-20 bg-[#FF6F91] mt-5 text-2xl;
 }
